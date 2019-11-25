@@ -31,11 +31,11 @@ int main()
 
 
     float calcBezier = (pow((1-T),3)*B0) + ((3*T)*(pow((1-T),2)*B1)) + (pow((3*T),2)*((1-T)*B2))+ (pow(T,3)* B3);
-    int calcb0 = (pow((1-T),3)*B0);
-    int calcb1 = ((3*T)*(pow((1-T),2)*B1));
-    int calcb2 = (pow((3*T),2)*((1-T)*B2));
-    int calcb3 = (pow(T,3)* B3);
-    int total = calcb0 + calcb1 + calcb2 + calcb3;
+    float calcb0 = (pow((1-T),3)*B0);
+    float calcb1 = ((3*T)*(pow((1-T),2)*B1));
+    float calcb2 = (pow((3*T),2)*((1-T)*B2));
+    float calcb3 = (pow(T,3)* B3);
+    float total = calcb0 + calcb1 + calcb2 + calcb3;
 
     cout << "\n Resultado do calculo bloco 0: \n" << endl;
     cout << calcb0 << endl;
